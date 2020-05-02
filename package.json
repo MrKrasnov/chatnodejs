@@ -1,0 +1,27 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrKrasnov/chatnodejs.git"
+  },
+  "author": "MrKrasnov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrKrasnov/chatnodejs/issues"
+  },
+  "homepage": "https://github.com/MrKrasnov/chatnodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
