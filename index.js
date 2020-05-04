@@ -1,22 +1,16 @@
 const express = require('express');
 const mongodb = require('mongodb');
-const app = express()
+const app = express();
+const todoRoutes = require('./routes/todos');
 
-// routes
-
-app.get('/', function (req, res) {
-    res.send('root layer');
-})
-
-app.get('/registration', function (req, res) {
-    res.send('layer registration');
-})
+app.set('view engine', 'html');
+app.use(todoRoutes);
 
 //подключение к mongoDB
 async function start() {
     try{
     const client = await mongodb.MongoClient.connect
-    ('mongodb://localhost:27017/cash-control', {
+    ('mongodb+srv://Admin:zet5Yanki@cluster0-hap6z.mongodb.net/todos', {
         useNewUrlParser: true,
         userFindAndModify: false,
     })
