@@ -1,3 +1,53 @@
-body {
-    background-color: red;
+h1{
+    text-align: center;
+}
+body, html{
+    font-family: 'ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.navigation{
+    padding: 25px 20px;
+    background-color: #57bf57;
+}
+.navigation-flex{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.autorization{
+    display: flex;
+}
+button{
+    color: #a1a1e8;
+    border-radius: 10px
+}
+.main{
+    padding-top: 20px;
+}
+.container{
+    padding: 0 20px;
+}
+.chat-table{
+    background-color: grey;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 5px #bbca9f;
+}
+.chat-message{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.chat-message-man{
+    padding-left: 20px;
+}
+.chat-message-man p{
+    padding: 0;
+    margin: 5px;
+}
+.username {
+    color: #57bf57;
+    font-size: 20px;
+    font-weight: bold;
 }
