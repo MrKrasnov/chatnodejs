@@ -1,9 +1,11 @@
 const express = require('express');
 const mongodb = require('mongodb');
+const path = require('path');
 const app = express();
 const todoRoutes = require('./routes/todos');
 
 app.set('view engine', 'html');
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(todoRoutes);
 
 //подключение к mongoDB
